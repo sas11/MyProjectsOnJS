@@ -94,3 +94,87 @@
 //     console.log(result);
 //     result = '';
 // }
+
+//functions
+// showFirstMessage('Hello World');
+
+// function showFirstMessage(text) {
+//     console.log(text);
+//     let num = 20;
+// }
+
+// const logger = function () {
+//     console.log('Hello');
+// };
+
+// logger();
+
+// const calc = (a, b) => {return a+ b};
+// const calc1 = a => a;
+// const calc2 = (a, b) => a+ b;
+
+// const usdCurr = 28;
+// const eurCurr = 32;
+// const discount = 0.9;
+
+// function convert(amount,curr){
+//     return curr * amount;
+// }
+
+// function promotion (result) {
+//     console.log(result * discount);
+// }
+
+// const res = convert(500,usdCurr); 
+// promotion(res);
+
+// function test() {
+//     for(let i =0; i<5;i++){
+//         console.log(i);
+//         if(i===3) return
+//     }
+//     console.log('done');
+// }
+
+// test();  
+
+// function doNothing() {};
+// console.log(doNothing() === undefined);
+
+// function getMathResult(a,b) {
+//     let res = a;
+//     const c =a;
+//     if(typeof(b)!='number'||b<=0){
+//         return a;
+//     }else{
+//         for(let i = 1;i<b;i++){
+//         a+=c;
+//         res+='---'+a;
+//     }
+//     return res;
+//     }
+
+// }
+
+// console.log(getMathResult(2,'fas'));
+//String
+// const str = 'test';
+// console.log(str.length);
+// console.log(str[1]);
+
+// let fruit = 'Some fruit';
+
+// console.log(fruit.indexOf('fruit'));
+
+// const logg = 'Hello world';
+// console.log(logg.slice(6, 11)); //world
+// console.log(logg.substring(6, 11)); //world
+// console.log(logg.substr(6, 5)); //world
+
+//Numbers
+// const num = 12.2;
+// console.log(Math.round(num)); // 12
+
+// const test = '12.2px';
+// console.log(parseInt(test)); // 12
+// console.log(parseFloat(test)); // 12.2
