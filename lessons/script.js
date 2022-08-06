@@ -58,14 +58,14 @@
 // }
 
 //  const num = 50;
-// // if(num <49){
-// //     console.log('error');
-// // }
-// // else if( num >100){
-// //     console.log('many');
-// // }else{
-// //     console.log('Ok');
-// // }
+// if(num <49){
+//     console.log('error');
+// }
+// else if( num >100){
+//     console.log('many');
+// }else{
+//     console.log('Ok');
+// }
 
 // (num === 50) ? console.log('Ok') : console.log('Error');
 
@@ -195,7 +195,9 @@
 // }
 
 // getTimeFromMinutes(300);
+
 //NUMBER FIBINACHI!!!
+
 // function fib(number) {
 //     let res = '',
 //         now =1,
@@ -231,3 +233,70 @@
 //     return res;
 // }
 // console.log(fib(0));
+
+// CALLBACK FUNCTIONS
+
+// function first(){
+//     //Do something
+//     setTimeout(function(){
+//         console.log(1);
+//     },500);
+// }
+
+// function second(){
+//     console.log(2);
+// }
+
+// first();
+// second();
+
+// function learnJS(lang, callback){
+//     console.log(`I learn: ${lang}`);
+//     callback();
+// }
+
+// function done(){
+//     console.log('I finish this lesson!');
+// }
+
+// learnJS('JS', done);
+
+//OBJECTS
+
+// const options = {
+//     name: 'test',
+//     width: 1024,
+//     height: 1024,
+//     colors: {
+//         border: 'black',
+//         bg: 'red'
+//     },
+//     makeTest: function(){
+//         console.log('test');
+//     }
+// };
+
+// console.log(options.name);
+
+// // delete options.name;
+
+// console.log(options);
+
+// for (let key in options) {
+//     if (typeof (options[key]) == 'object') {
+//         for (let any in options[key]) {
+//             console.log(`Object ${key} has property ${any} and value ${options[key][any]}`);
+//         }
+//     } else {
+//         console.log(`Property ${key} value ${options[key]}`);
+//     }
+// }
+
+// console.log(Object.keys(options).length);
+// options.makeTest();
+
+//Destructed objects 
+
+// const {border, bg} = options.colors;
+
+// console.log(border);
