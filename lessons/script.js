@@ -300,3 +300,36 @@
 // const {border, bg} = options.colors;
 
 // console.log(border);
+
+//PSEUDO ARRAY
+
+// const arr = [6,2,4,8,5,6];
+// arr.sort(compareNum); //sort a number
+// console.log(arr);
+
+// function compareNum(a,b){
+//     return a-b;
+// }
+// // arr[99] = 0;
+// // console.log(arr.length);
+
+
+
+// arr.pop(); //delete elem 
+// console.log(arr);
+// arr.push(10); //add elem
+// console.log(arr);
+
+// for(let value of arr){
+//     console.log(value);
+// }
+
+// arr.forEach(function(el,index, arr){
+//     console.log(`${index} : ${el} inside an array - ${arr}`);
+// });
+
+// const str = prompt('','');
+// const products = str.split(', '); //crete an ARRAY from string - str!!!
+// products.sort(); // sorted a-z
+// console.log(products.join('; ')); //create a string from array - products!!!
+
