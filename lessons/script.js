@@ -178,3 +178,56 @@
 // const test = '12.2px';
 // console.log(parseInt(test)); // 12
 // console.log(parseFloat(test)); // 12.2
+
+// function getTimeFromMinutes(minutes) {
+//     const hour = parseInt(minutes/60);
+//     const min = parseInt(minutes%60);
+//     if(minutes <0 || !Number.isInteger(minutes)){
+//         return 'Ошибка, проверьте данные';
+//     }
+//     if(hour === 0 || hour ===1 ){
+//             return `Это ${hour} часов и ${mim} минут`;
+//         }
+//         else{
+//             return `Это ${hour} часа и ${min} минут`;
+//         }
+
+// }
+
+// getTimeFromMinutes(300);
+//NUMBER FIBINACHI!!!
+// function fib(number) {
+//     let res = '',
+//         now =1,
+//         result = 0,
+//         before= 1;
+
+//     if(typeof(number) != 'number'||!Number.isInteger(number)){
+//         return res;
+//     }
+//     if (number == 1) {
+//         res += '0';
+//     } else if (number == 2){
+//         res  = '0 1';
+//     }else if (number == 3){
+//         res = "0 1 1";
+//     }
+//     else if(number >3){
+//         res = "0 1 1";
+//         for (let i = 3; i < number; i++) {
+//             if(result<now){
+//                 result = now+before;
+//                 res+=' ' + result;
+//             }else if(before<result){
+//                 before = result+now;
+//                 res+=' ' + before;
+//             }else if(now<result){
+//                 now=before+result;
+//                 res+=' ' +now;
+//             }
+//         }
+//         return res;
+//     }
+//     return res;
+// }
+// console.log(fib(0));
