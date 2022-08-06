@@ -2,7 +2,7 @@
  let numberOfFilms;
 
  function start() {
-    numberOfFilms = +prompt('How many movies have you watched?', '');
+    numberOfFilms = +prompt('How many movies have you watched?', '').trim();
 
     while (numberOfFilms == '' || numberOfFilms == null || isNaN(numberOfFilms)) {
        numberOfFilms = +prompt('How many movies have you watched?', '');
@@ -25,12 +25,13 @@
        answer = 0;
 
     while (answer != 2) {
-       lastMovie = prompt('Last move watched?', '');
-       ratingMovie = prompt('And it rating?', '');
+       lastMovie = prompt('Last move watched?', '').trim();
+       ratingMovie = prompt('And it rating?', '').trim();
 
-       if (lastMovie != null && ratingMovie != null && lastMovie != '' && ratingMovie != '' && lastMovie.length < 50) {
+       if (lastMovie != null && ratingMovie != null && lastMovie != '' && ratingMovie != '' &&
+        lastMovie.length < 50) {
           personaMovieDB.movies[lastMovie] = ratingMovie;
-          alert('done!');
+          console.log('done');
           answer++;
        } else {
           alert('your answers incorrect, repeat please.');
