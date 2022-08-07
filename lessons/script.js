@@ -451,3 +451,25 @@
 
 // availableCurr([...baseCurrencies,...additionalCurrencies], 'CNY'); // SPREAD оператор копирования!!! оператор разворота!!!
 
+//create Objects OOP
+
+// const solder = {
+//     health: 400,
+//     armor: 100,
+//     sayHello: function() {
+//         console.log('hello');
+//     }
+// };
+
+// const john = Object.create(solder);
+
+// // const john = {
+// //     health:100
+// // };
+
+// // john.__proto__ = solder;//old way, no use now
+
+// Object.setPrototypeOf(john, solder);//actuality way
+
+// console.log(john.armor);
+// john.sayHello();
