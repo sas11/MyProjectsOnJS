@@ -333,3 +333,91 @@
 // products.sort(); // sorted a-z
 // console.log(products.join('; ')); //create a string from array - products!!!
 
+// const obj = {
+//     a: 12,
+//     b: 20
+// };
+
+// const copy = obj; //Copy link on Obj
+
+// copy.a = 10;
+
+// console.log(copy.a);//10
+// console.log(obj.a);//10
+
+// function copy(mainObj){ // Поверхностная копия обьекта
+//     let objCopy = {};
+
+//     let key;
+//     for(key in mainObj){
+//         objCopy[key] = mainObj[key];
+//     }
+
+//     return objCopy;
+// }
+
+// const numbers = {
+//     a:2,
+//     b:5,
+//     c:{
+//         x:7,
+//         y:4
+//     }
+// };
+
+// const newNumbers = copy(numbers);
+// newNumbers.c.x = 10;
+
+// newNumbers.a =10;
+// console.log(newNumbers);
+// console.log(numbers);
+
+// const add = {
+//     d:17,
+//     e:20
+// };
+
+// // console.log(Object.assign(numbers, add));// add object 'add'  in object 'number'
+
+// const clone = Object.assign({}, add); // Поверхностная копия обьекта
+// clone.d =20;
+
+// console.log(add);
+// console.log(clone); 
+
+// const oldArray = ['a', 'b', 'c'];
+// const newArray = oldArray.slice(); // copy Array
+
+// newArray[1] = 'dsadsa';
+// console.log(oldArray);
+// console.log(newArray);
+
+// // SPREAD оператор копирования!!! оператор разворота!!!
+// const video = ['youtube','vimeo'],
+//       blogs = ['journal', 'blogger'],
+//       internet = [...video, ...blogs, 'vk', 'facebook'];
+
+// console.log(internet);
+
+// function log (a,b,c){
+//     console.log(a);
+//     console.log(b);
+//     console.log(c);
+// }
+
+// const num = [2,5,7];
+
+// log(...num);
+
+// const array = ['a','b'];
+
+// const newArr = [...array];
+
+// const q = {
+//     one: 1,
+//     two: 2
+// };
+
+// const newObj = {...q};
+
+ 
