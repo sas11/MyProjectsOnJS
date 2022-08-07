@@ -420,4 +420,34 @@
 
 // const newObj = {...q};
 
- 
+// const someString = 'This is some strange string';
+
+// function reverse(str) {
+//    let res = '';
+//    if(typeof(str)!='string'){
+//     return 'Ошибка!';
+//    }
+//    for(let i = str.length-1;i>=0;i--){
+//     res += str[i];
+//    }
+//    return res;
+//    return str.split('').reverse().join('');//перевлд в массив- реверс-перевод в строку 
+// }
+
+// const baseCurrencies = ['USD', 'EUR'];
+// const additionalCurrencies = ['UAH', 'RUB', 'CNY'];
+
+// function availableCurr(arr, missingCurr) {
+//     let str = '';
+//     arr.length === 0 ? str =  'Нет доступных валют' : str = 'Доступные валюты:\n';
+
+//     arr.forEach(curr =>{
+//         if(curr!=missingCurr){
+//             str+=`${curr}\n`;
+//         }
+//     });
+//     return str;
+// }
+
+// availableCurr([...baseCurrencies,...additionalCurrencies], 'CNY'); // SPREAD оператор копирования!!! оператор разворота!!!
+
