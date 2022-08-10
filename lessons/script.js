@@ -564,7 +564,7 @@
 
 // function isOpen(prop) {
 //     let answer = prop ?  'Закрыто' :  'Открыто';
-    
+
 
 //     return answer ;
 // }
@@ -591,3 +591,29 @@
 // transferWaitors(restorantData);
 
 // console.log(restorantData.waitors[0]);
+
+//events
+
+// const btn = document.querySelector('button'),
+//     overlay = document.querySelector('overlay');
+
+
+// // btn.onclick = function(){
+// //     alert('hello world');
+// // };
+
+// const deleteListener = (event) => {
+//     console.log(event.target);
+//     console.log(event.type);
+// };
+
+// btn.addEventListener('click', deleteListener);
+// overlay.addEventListener('click', deleteListener);
+
+// const link = document.querySelector('a');
+
+// link.addEventListener('click', (event) => {
+//     event.preventDefault();
+
+//     console.log(event.target);
+// });
