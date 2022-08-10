@@ -473,3 +473,121 @@
 
 // console.log(john.armor);
 // john.sayHello();
+
+//Static tipization
+//To string
+
+//1
+// console.log(typeof (String(null)));
+
+// //2
+// console.log(typeof (5 + ''));
+
+// //To Number
+
+// //1
+// console.log(typeof (Number('4')));
+
+// //2
+// console.log(typeof (+'5'));
+
+// //3
+
+// console.log(typeof (parseInt('15px', 10)));
+
+// let answer = +prompt('hello', '');
+
+// //To boolean
+
+// 0, '', null, undefined, NaN; //all false!!!
+
+// //1
+// let switcher = null;
+
+// if (switcher) {
+//     console.log('Working...');
+// }
+
+// switcher = 1; // true!!!
+
+// if (switcher) {
+//     console.log('Working...');
+// }
+
+// //2
+// console.log(typeof(Boolean('4'))); //true
+// //3
+// console.log(typeof(Boolean(!!'4'))); //true
+
+// function crateCounter(){
+//     let counter = 0;
+//     const myFunction = function(){
+//         counter++;
+//         return counter;
+//     };
+//     return myFunction;
+// }
+
+// const increment = crateCounter();
+
+// const c1 = increment() ;
+// const c2 = increment();
+// const c3 = increment();
+
+// console.log(c1,c2,c3);
+
+// const restorantData = {
+//     menu: [
+//         {
+//             name: 'Salad Caesar',
+//             price: '14$'
+//         },
+//         {
+//             name: 'Pizza Diavola',
+//             price: '9$'
+//         },
+//         {
+//             name: 'Beefsteak',
+//             price: '17$'
+//         },
+//         {
+//             name: 'Napoleon',
+//             price: '7$'
+//         }
+//     ],
+//     waitors: [
+//         {name: 'Alice', age: 22}, {name: 'John', age: 24}
+//     ],
+//     averageLunchPrice: '20$',
+//     openNow: true
+// };
+
+// function isOpen(prop) {
+//     let answer = prop ?  'Закрыто' :  'Открыто';
+    
+
+//     return answer ;
+// }
+
+// console.log(isOpen(restorantData.openNow));
+
+// function isAverageLunchPriceTrue(fDish, sDish, average) {
+//     if (+fDish.price.slice(0, -1) + (+sDish.price.slice(0, -1)) < +average) {
+//         return 'Цена ниже средней';
+//     } else {
+//         return 'Цена выше средней';
+//     }
+// }
+
+// console.log(isAverageLunchPriceTrue(restorantData.menu[0], restorantData.menu[1], restorantData.averageLunchPrice));
+
+// function transferWaitors(data) {
+//     // const copy = JSON.parse(JSON.stringify(data)); // полная копия обьекта с вложннными обьектами 
+//     const copy = data; 
+//     copy.waitors = [{name: 'Mike', age: 32}]; //замена всего массива, так как вложенные обьекты не копировались
+//     return copy;
+// }
+
+// transferWaitors(restorantData);
+
+// console.log(restorantData.waitors[0]);
