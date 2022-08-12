@@ -638,7 +638,7 @@
 //     console.log(node);
 // }
 
-//Recursion
+//RECURSION
 
 // function pow(x, n) {
 //     let res = 1;
@@ -662,30 +662,30 @@
 // console.log(pow(2, 3)); //8
 // console.log(pow(2, 4)); //16
 
-let students = {
-    js: [{
-        name: 'john',
-        progress: 100
-    }, {
-        name: 'ivan',
-        progress: 60
-    }],
+// let students = {
+//     js: [{
+//         name: 'john',
+//         progress: 100
+//     }, {
+//         name: 'ivan',
+//         progress: 60
+//     }],
 
-    html: {
-        basic: [{
-            name: 'petr',
-            progress: 20
-        }, {
-            name: 'ann',
-            progress: 18
-        }],
+//     html: {
+//         basic: [{
+//             name: 'petr',
+//             progress: 20
+//         }, {
+//             name: 'ann',
+//             progress: 18
+//         }],
 
-        pro: [{
-            name: 'sam',
-            progress: 10
-        }]
-    }
-};
+//         pro: [{
+//             name: 'sam',
+//             progress: 10
+//         }]
+//     }
+// };
 
 // function getTotalProgressByIteration(data) {
 //     let total = 0;
@@ -716,26 +716,41 @@ let students = {
 
 // console.log(getTotalProgressByIteration(students));
 
-function getTotalProgressRecursion(data) {
-    if (Array.isArray(data)) {
-        let total = 0;
+// function getTotalProgressRecursion(data) {
+//     if (Array.isArray(data)) {
+//         let total = 0;
 
 
-        for (let i = 0; i < data.length; i++) {
-            total += data[i].progress;
-        }
+//         for (let i = 0; i < data.length; i++) {
+//             total += data[i].progress;
+//         }
 
-        return [total, data.length];
-    } else {
-        let total = [0, 0];
-        for (let subData of Object.values(data)) {
-            const subDataArr = getTotalProgressRecursion(subData);
-            total[0] += subDataArr[0];
-            total[1] += subDataArr[1];
-        }
-        return total;
-    }
-}
+//         return [total, data.length];
+//     } else {
+//         let total = [0, 0];
+//         for (let subData of Object.values(data)) {
+//             const subDataArr = getTotalProgressRecursion(subData);
+//             total[0] += subDataArr[0];
+//             total[1] += subDataArr[1];
+//         }
+//         return total;
+//     }
+// }
 
-const result = getTotalProgressRecursion(students);
-console.log(result[0] / result[1]);
+// const result = getTotalProgressRecursion(students);
+// console.log(result[0] / result[1]);
+
+// function factorial(n) {
+//     if(!Number.isInteger(n) || typeof(n) !== 'number'){
+//         return 'error';
+//     }
+
+//     if(n >= 1){
+//         return n  * factorial(n - 1);
+//     }else{
+//         return 1;
+//     }
+ 
+// }
+
+// console.log(factorial(5.2));
