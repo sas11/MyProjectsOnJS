@@ -687,6 +687,24 @@
 //     }
 // };
 
+// const myRec = (data) => {
+//     if(Array.isArray(data)){
+//         let total = 0;
+//         for(let i = 0;i<data.length;i++){
+//             total += data[i].progress;
+//         }
+//         return [total, data.length];
+//     }else{
+//         let resArray = [0, 0];
+
+//         for(let subData of Object.values(data)){
+//             const resObjArray = myRec(subData);
+//             resArray[0] += resObjArray[0];
+//             resArray[1] += resObjArray[1];
+//         }
+//         return resArray;
+//     }
+// };
 // function getTotalProgressByIteration(data) {
 //     let total = 0;
 //     let students = 0;
@@ -754,3 +772,4 @@
 // }
 
 // console.log(factorial(5.2));
+
