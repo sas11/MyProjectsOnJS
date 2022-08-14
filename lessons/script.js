@@ -768,7 +768,7 @@
 //     }else{
 //         return 1;
 //     }
- 
+
 // }
 
 // console.log(factorial(5.2));
@@ -791,19 +791,33 @@
 //         console.log(e.targetTouches[0].pageX);
 //     });
 
-    // box.addEventListener('touchmove', (e) => {
-    //     e.preventDefault();
+// box.addEventListener('touchmove', (e) => {
+//     e.preventDefault();
 
-    //     console.log('Move');
-    // });
-    
-    // box.addEventListener('touchend', (e) => {
-    //     e.preventDefault();
+//     console.log('Move');
+// });
 
-    //     console.log('End');
-    // });
+// box.addEventListener('touchend', (e) => {
+//     e.preventDefault();
+
+//     console.log('End');
+// });
 // });
 
 //touches
 //targetTouches
 //changedTouches
+
+//Async,defer, dynamic scripts
+
+// const p = document.querySelectorAll('p');
+// console.log(p);
+
+// function loadScript(src) {
+//     const script = document.createElement('script');
+//     script.src = src;
+//     script.async = false;
+//     document.body.append(script);
+// }
+
+// loadScript('test.js');
