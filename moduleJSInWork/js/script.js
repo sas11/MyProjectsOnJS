@@ -236,3 +236,32 @@
 // messages.shift();
 // console.log(readMessages.has(messages[0]));
 
+//DATE
+
+const now = new Date();
+//  new Date.parse('2022-08-20');
+console.log(now.setHours(40));
+console.log(now);
+
+
+
+// console.log(now.getFullYear());
+// console.log(now.getMonth());
+// console.log(now.getDate());
+// console.log(now.getDay());
+// console.log(now.getHours());
+// console.log(now.getUTCHours());
+
+// console.log(now.getTimezoneOffset());
+
+// console.log(now.getTime());
+
+// let start = new Date();
+
+// for (let i = 0; i < 100000; i++) {
+//     let some = i ** 3; //Возведение в степень
+// }
+
+// let end = new Date();
+
+// console.log(`Цикл отработал за ${end - start} ms`);
