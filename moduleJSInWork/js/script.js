@@ -265,3 +265,48 @@ console.log(now);
 // let end = new Date();
 
 // console.log(`Цикл отработал за ${end - start} ms`);
+
+// const endTime = '2022-08-20';
+
+// function timeValues(endTime){
+//     const t = Date.parse(endTime)- Date.parse(new Date()),
+//           days = Math.floor(t / (1000 * 60 * 60 * 24)),
+//           hours = Math.floor((t / (1000 * 60 * 60) % 24)),
+//           minutes = Math.floor((t / 1000 / 60) % 60),
+//           seconds = Math.floor((t / 1000) % 60);
+
+//     return {
+//         'total': t,
+//         'days': days,
+//         'hours': hours,
+//         'minutes': minutes,
+//         'seconds': seconds
+//     };
+
+// }
+
+// function setClock(selector, endTime){
+//     const timer = document.querySelector(selector),
+//               days = timer.querySelector('#days'),
+//               hours = timer.querySelector('#hours'),
+//               minutes = timer.querySelector('#minutes'),
+//               seconds = timer.querySelector('#seconds'),
+//               timeInterval = setInterval(updateClock, 1000);
+    
+//     function updateClock(){
+
+//         const values = timeValues(endTime);
+
+//         days.innerHTML = values.days;
+//         hours.innerHTML = values.hours;
+//         minutes.innerHTML = values.minutes;
+//         seconds.innerHTML = values.seconds;
+
+//         if(values.total<=0){
+//             clearInterval(timeInterval);
+//         }
+//     }
+//     updateClock();
+// }
+
+// setClock('.timer',endTime);
