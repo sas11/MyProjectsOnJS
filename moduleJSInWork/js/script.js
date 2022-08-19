@@ -146,3 +146,38 @@
 // map.forEach((value,key,map) => {
 //     console.log(key,value);
 // });
+
+//SET
+
+// const arr = [1, 2, 2, 4, 5, 4, 7, 1];
+// const set = new Set(arr);
+// console.log(set);
+
+// const students = ['Alex', 'Anna', 'Oleg', 'Alex'];
+// const set1 = new Set(students);
+
+// console.log(unique(set1));
+
+// set1.add('Andrey');
+// set1.delete(value);
+// set1.has(value);
+// set1.clear();
+// set1.size;
+
+// for(let value of set1){
+//     console.log(value);
+// }
+
+// console.log(set1);
+
+// set1.forEach((value, valueAgain,set) =>{
+//     console.log(value, valueAgain);
+// });
+
+// console.log(set1.values());
+// console.log(set1.keys());
+// console.log(set1.entries());
+
+// function unique(arr) {
+//     return Array.from(new Set(arr)); // избавление от дубликатов
+// }
