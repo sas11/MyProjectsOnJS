@@ -181,3 +181,58 @@
 // function unique(arr) {
 //     return Array.from(new Set(arr)); // избавление от дубликатов
 // }
+
+//WEAKMAP - WEAKSET
+
+// let user = {name: 'Ivan'};
+
+// // const arr = [user];
+// let map = new WeakMap();
+// map.set(user, 'data');
+
+// user = null;
+
+// console.log(user);
+// console.log(map.has(user));//если на обьект удалена ссылка вне коленции в коллекции тоже удаляется
+
+// console.log(map);
+// let cash = new WeakMap(); // может иметь в ключах только обьект
+
+
+// function cashUser (user){
+//     if(!cash.has(user)){
+//         cash.set(user, Date.now());
+//     }
+
+//     return cash.get(user);
+// }
+
+// let lena = {name: 'elena'};
+// let alex = {name: 'Alex'};
+
+// cashUser(lena);
+// cashUser(alex);
+
+// lena = null;
+
+// console.log(cash.has(lena));
+// console.log(cash.has(alex));
+
+//WeakSet 
+//add, has, delete   значения только обьекты и всего 3  метода
+
+// let messages = [
+//     {text: 'Hello', from: 'John'},
+//     {text: 'World', from: 'Alex'},
+//     {text: '...', from: 'M'},
+// ];
+
+// let readMessages = new WeakSet();
+
+// readMessages.add(messages[0]);
+// // readMessages.add(messages[1]);
+
+// readMessages.add(messages[0]);
+// messages.shift();
+// console.log(readMessages.has(messages[0]));
+
