@@ -238,10 +238,10 @@
 
 //DATE
 
-const now = new Date();
-//  new Date.parse('2022-08-20');
-console.log(now.setHours(40));
-console.log(now);
+// const now = new Date();
+// //  new Date.parse('2022-08-20');
+// console.log(now.setHours(40));
+// console.log(now);
 
 
 
@@ -313,14 +313,41 @@ console.log(now);
 
 //MutationObserver
 
-const box = document.querySelector('.box');
+// const box = document.querySelector('.box');
 
-let observer = new MutationObserver(mutationRecords => {
-    console.log(mutationRecords);
-});
+// let observer = new MutationObserver(mutationRecords => {
+//     console.log(mutationRecords);
+// });
 
-observer.observe(box, {
-    childList: true
-});
+// observer.observe(box, {
+//     childList: true
+// });
 
-observer.disconnect();
+// observer.disconnect();
+
+//Functions-constructors
+
+// function User(name, id) { //Создание конструктора 
+//     this.name = name;
+//     this.id = id;
+//     this.human = true;
+//     this.hello = function(){
+//         console.log(`Hello ${this.name}`);
+//     };
+// }
+
+// User.prototype.exit = function() {
+//     console.log(`User ${this.name} is leave`);
+// };
+
+// const ivan = new User('Ivan', 28); // Вызов контруктора
+// const alex = new User('Alex', 20);
+
+// ivan.exit();
+
+// ivan.hello();
+// alex.hello();
+
+// console.log(ivan);
+// console.log(alex);
+
